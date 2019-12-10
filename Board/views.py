@@ -5,3 +5,7 @@ from .models import *
 
 def tasks(request):
     return render(request, 'tasks.html', {'tasks':Task.objects.all()})
+
+
+def hi(request):
+    return render(request, 'main.html')
